@@ -1,0 +1,17 @@
+.Quote {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  margin: 8px 0;
+  color: #222;
+  max-width: 50%;
+}
+
+.Quote::before {
+  color: #ccc;
+  content: open-quote;
+}
+
+.Quote::after {
+  color: #ccc;
+  content: close-quote;
+}

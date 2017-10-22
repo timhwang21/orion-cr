@@ -1,0 +1,28 @@
+.SubDatum {
+  width: 100%;
+}
+
+.SubDatum > h4.openable {
+  cursor: pointer;
+}
+
+.SubDatum + .SubDatum {
+  margin-top: 20px;
+}
+
+.SubDatum-desc {
+  border-radius: 5px;
+  background: #eee;
+  padding: 10px;
+  width: 50%;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.SubDatum-desc > *:first-child {
+  margin-bottom: 10px;
+}
+
+.SubDatum-stat {
+  width: 100px;
+}

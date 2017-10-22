@@ -1,0 +1,200 @@
+[
+  {
+    "question":
+      "Q2 - As a REVIEWER, what are other categories of errors that you consider important or blocking, and how frequently do you encounter them?",
+    "type": "single_question",
+    "scale": null,
+    "answers": [
+      "Lots of small patches that looks ok, but when read all at once, looks terrible",
+      "Code redundancy, Occasionally ",
+      "Concise logic, meaning not the best handling/approach to validations, if conditions, declarative approaches not handled properly, Very rarely ",
+      "checking for the same falsy values on a component instead of handling that logic on level above",
+      "saving intermediate values on a constant",
+      "using lodash's get instead of obj.value1.value2.value3...",
+      "use composition instead of inheritance to avoid several re-renders. Also leverage componentWillReceiveProps",
+      "lack of tests for new components"
+    ]
+  },
+  {
+    "question":
+      "Q9 - As a REVIEWER, what suggestions do you have for assigning reviewers to patchsets?",
+    "type": "single_question",
+    "scale": null,
+    "answers": [
+      "Get +1s from Team 1st.  Add +2 afterward (unless working on a release blocker, or something very small)",
+      "Add after build and gerrit are verified",
+      "Add +2er by gerrit and don't bother for 24 hours unless important or blocking concern. Then PM, and make sure the patch is in good shape (should already be acomplished).",
+      "team channel + add those on team who know the code (or should) for all patches first.  Wait 24 hours before asking again unless blocked",
+      "Request appropriate people, i.e., those who have some knowledge of area of code being changed",
+      "Add contextually appropriate reviewers",
+      "All members from the team should be added. Add at least one owner"
+    ]
+  },
+  {
+    "question":
+      "Q20 - As a REVIEWER, what annoys you the most about the code review process? (most annoying at top)",
+    "type": "single_question",
+    "scale": null,
+    "answers": [
+      "When we try to implement something that is already implemented",
+      "When you review several small and harmless patches, but the overall result looks bad. Not that much can be done, outside of dedicate a team to hunt down these things. ",
+      "Having gerrits merged that only had one reviewer",
+      "ask for reviews then abandon gerrit",
+      "Global broadcast of tickets needing reviews",
+      "spamming public slack channels that distracts and decentralizes other potentially valuable discussions",
+      "When you leave a comment that is not addressed properly (dont care if fixed in a future patch, just that it is acknowledged. If I review your patch, and leave a comments, with or without -1/+1, I expect a feedback",
+      "not answering/addressing my own comments",
+      "Having other reviewers overlook your valid concerns",
+      "Gerrit",
+      "Gerrit email notifications for seemingly irrelevant details (e.g., Jenkins test user, or needing +1 from specific owner), because these emails if not filtered or marked read clutter the thread and can lead to important feedback from actual reviewer or failed build be missed",
+      "losing the comments after rebase, not knowing if all issues were addressed",
+      "Large patch-sets (but recognizing they are unavoidable)",
+      "Massive hard to comprehend patchsets",
+      "Time spent",
+      "Re-reviewing patches multiple times",
+      "Having to have the mindset",
+      "Understand the context",
+      "Reviewing code with little confidence, whether its because reviewer doesn't have knowledge in the area of the codebase he/she is reviewing or other reasons",
+      "Small number of +2ers",
+      "Poorly documented commit messages"
+    ]
+  },
+  {
+    "question":
+      "Q13 - As a REVIEWER, what can submitters do to make reviewing easier?",
+    "type": "single_question",
+    "scale": null,
+    "answers": [
+      "When patch has something that looks like a smell, but was chosen for a reason, a note in the commit mssg or comment on gerrit explaining rationale",
+      "Write comments in gerrit or in code which they think may be questionable",
+      "useful commit messages, preemptive comments for potentially strange changes",
+      "More comments",
+      "explicit commit message",
+      "Thorough documentation of test cases, explanation of change.  Would be okay to say ‘read JIRA’ if complex ",
+      "Descriptive commit messages updated for each PS",
+      "More descriptive context",
+      "URL for where to test, if UX is required and I am unfamiliar with code",
+      "If big patch, setup a meeting to review the code in a group. Or leave meaningful comments in the gerrit patchset to help people to understand what goes where.",
+      "no unrelated changes in commit to minimize commit size and area of effect",
+      "Small gerrits",
+      "Break down big gerrits into smaller ones",
+      "minimize LOC diff (smaller changes) with succinct commit message and description",
+      "small patches",
+      "Few patchsets",
+      "Internal team reviewers",
+      "git blaming areas of code changed and requesting appropriate people to review rather than spamming public channels",
+      "Use personal or team communication channel when they need fast review...",
+      "submitters self-review code and get +V BEFORE adding reviewers",
+      "add for review after build passed and QA +1",
+      "Address comments properly",
+      "Overall I trust people. But I expect submitters to learn from mistakes. If they still encounter difficulties, I do not mind helping them, as long as they want to. (I like to be help and have feedbacks! How do you progress else? ;-)"
+    ]
+  },
+  {
+    "question":
+      "Q10 - As a REVIEWER, what would you do to improve the code review process? (most important at top)",
+    "type": "single_question",
+    "scale": null,
+    "answers": [
+      "Add someone else to have +2 on CSS",
+      "Give more +2 to best and eager +1 reviewers",
+      "increase number of +2ers; maybe limit the reach/scope of people's +2 ability to areas they have proven competence if there is significant concern of regression from new +2er abusing ability to merge",
+      "categorise rocket fuel members, so we could add specific ones, or more relevant ones according to the patch (business logic, owner, css, etc)",
+      "clearly delineate responsibilities and expectations of +1 vs +2 and more largely how to balance competing priorities of merging code and getting things done vs refining, making more efficient, eloquent, etc.",
+      "Have a developed set of standards, across teams, for issues that should be addressed, but are not blocking, and issues that are blocking",
+      "Have a designated set of +1ers for a project, and +2ers for a project, and make sure the code goes through that ladder first",
+      "for large and complex changes, be able to explain within owners group (at least) what the changes will be before writing any code (i.e. some type of architectural review). goal will be that at least owners have an idea of what types of changes are necessary, and that information is somewhat shared",
+      "remove some email notifications to not require as much upkeep on a particular thread (i.e., i don't need to know a build started or maybe even if it succeeds, rather I care to know most when it fails, I don't need an email to tell me that jenkins test user doesn't approve and an owner is needed (they may already be added as a reviewer and haven't gotten to it yet), etc"
+    ]
+  },
+  {
+    "question":
+      "Q5 - As a REVIEWEE, what can reviewers do to make submitting easier?",
+    "type": "single_question",
+    "scale": null,
+    "answers": [
+      "If there is a blocking concern, explain it thoroughly ",
+      "explain clearly what could be done differently to improve/change implementation",
+      "Explain in more detail what is wrong or have a coding session to go over the patch",
+      "For non-trivial comments provide examples",
+      "be explicit on the fix he/she wants to see, and why",
+      "when being [nitpicky] with names, please suggest one",
+      "Make the owners file with more people",
+      "more +2ers",
+      "perhaps some special designation can be made to represent when a patch simply needs re+ after resolving a merge conflict, since those re-review requests fall into same means as normal review requests",
+      "Investigate whether concern is truly blocking (at times I will have to argue when a cursory review blocks something that is correct)"
+    ]
+  },
+  {
+    "question":
+      "Q11 - As a REVIEWEE, what annoys you the most about the code review process? (most annoying at top)",
+    "type": "single_question",
+    "scale": null,
+    "answers": [
+      "Feeling like a nag, esp. when seeking +2",
+      "Accumulate 7 +1's and not a +2",
+      "waiting idle for reviews",
+      "Short non descriptive comments",
+      "Different standards across different teams for what is and is not blocking",
+      "when build takes a long time therefore a tiny fix (typo for instance) is painful. I will have to repush a patch, if it is end of a day, then my patch wont be merged till next day, might have to rebase again on top of it. I usually answer the comment to say that I will repush a quick patch later to fix that, and do it.",
+      "getting re+1 or re+2 because a rebase was needed",
+      "Blocking having +2 due to owner permission"
+    ]
+  },
+  {
+    "question":
+      "Q12 - As a REVIEWEE, what would you suggest to improve the code review process?",
+    "type": "single_question",
+    "scale": null,
+    "answers": [
+      "Implement standards for contacting reviewers / reviewer chain",
+      "self-review own code BEFORE adding reviewers",
+      "More collaboration",
+      "Make the owners file with more people :)",
+      "Sync up on standards for blocking and non-blocking concerns (that takes into account context, i.e. release blockers may get a pass on some things",
+      "DONT PENALIZE PEOPLE WHO DO MISTAKES. If you penalize people too much (like looking down on them, bad comments, etc), then they might not include you in future patches review, and it will depreciate the overall code quality. Be gentle. We are humans, we don't like to be criticized, so be constructive. (and of course, be ready to receive constructivism!)",
+      "one of the categories of issues (patch size) is a bit problematic. specifically when building new features, the diff will often be large but have little interaction with existing code and breaking up those patches either doesn't make sense since basically no real functionality is testable when broken into smaller pieces or other issues are introduced by breaking up the larger patches (has some CSS style, code style, warnings, etc.)"
+    ]
+  },
+  {
+    "question":
+      "Q33 - What concerns do you have about the current setup of the +2/+1 system?",
+    "type": "single_question",
+    "scale": null,
+    "answers": [
+      "+2ers seem overburdened, +1ers are sometimes lax",
+      "Lack of sufficient +2ers leads to problem of some code changes needing +2 but none of +2ers know specific are of code enough/take time to find confidence in patch to +2 and rather will +1",
+      "Distribution of +2ers is not uniform among teams; +2ers are forced to review code in areas they don't necessarily know about so they won't fully understand implications of code changes",
+      "The lack of QA vetting patches",
+      "We don't use enough the -1. I am guilty of that. I trust people and wanna encourage them.",
+      "Someone with a +2 can allow a gerrit to be merged without other reviewers",
+      "Have a high level overview of the feature, not just focused components/cases",
+      "+2er on a different team will not know the context, and will not be able to give as appropriate a review (i.e. less chance for design questions to be checked off on) and not all teams have a +2er",
+      "Lack of clarity on delegation of responsibilities for +2ers and +1 / priorities for merging code and getting things done versus finding most efficient, generic, eloquent solution",
+      "No clear way to promote folks from +1 to +2, so it is difficult to fix this",
+      "People give reviews because they believe the person is correct without actually looking at the gerrit",
+      "People give reviews without actually testing the gerrit which causes errors and regressions"
+    ]
+  },
+  {
+    "question":
+      "Q46 - What differentiates a +2 reviewer from a +1 reviewer? What value do +2ers provide in your opinion?",
+    "type": "single_question",
+    "scale": null,
+    "answers": [
+      "broad knowledge of our patterns, and trends outside RF",
+      "Specialized knowledge, either about particular area of codebase, cross-team overlaps (e.g, core components used in many places) or deeper understanding of library/framework internals",
+      "The +2ers should already know the business logic",
+      "Deep knowledge of React/js",
+      "Ability to suggest solutions when pointing out issues",
+      "Ability to provide meaningful comments",
+      "Application-wide knowledge to be able to identify possibly ripple effects of patch",
+      "Understanding of more than one section of code-base--knowledge of how a change in place x might cause issues in place y",
+      "Final line of defense against nonsense",
+      "+2er considers 'big picture' while +1er may only consider locally affected area",
+      "+2er considers all use cases while +1er may only consider positive use cases",
+      "a +2 has more responsibility, and have to catch more things. The +2 can be harsher if necessary.",
+      "Takes time to give close, detailed review"
+    ]
+  }
+]

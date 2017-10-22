@@ -1,0 +1,44 @@
+.App {
+  background: #fafafa;
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  color: white;
+  width: 100%;
+  flex: 1 0;
+}
+
+.App-title {
+  font-size: 1.5em;
+  letter-spacing: 3px;
+}
+
+.App-nav {
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.App-nav a {
+  color: #222;
+  width: 150px;
+  text-decoration: none;
+  padding: 4px 2px 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.App-nav a:hover {
+  border-color: #b0b0b0;
+}
+
+.App-nav a.active {
+  font-weight: bold;
+  border-color: rgb(69, 90, 100);
+}
+
+.App-content {
+}

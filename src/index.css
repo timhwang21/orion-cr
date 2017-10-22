@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Avenir, sans-serif;
+}
+
+h1 {
+  font-weight: initial;
+  text-transform: uppercase;
+}
+
+h3,
+h4 {
+  margin: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+i.fa {
+  height: 16px;
+  width: 16px;
+}
+
+a.anchor {
+  color: black;
+  display: flex;
+  text-decoration: none;
+  position: relative;
+}
+
+a.anchor:hover {
+  text-decoration: underline;
+}
+
+a.anchor:hover::before {
+  content: '#';
+  position: absolute;
+  left: -1rem;
+  color: #ccc;
+}
+
+button {
+  cursor: pointer;
+}

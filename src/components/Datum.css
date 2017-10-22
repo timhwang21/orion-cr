@@ -1,0 +1,16 @@
+.Datum {
+  width: 80%;
+  padding: 20px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.Datum:first-of-type {
+  padding-top: 0;
+}
+
+.Datum > * {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

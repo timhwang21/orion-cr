@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Coding style",
+    "description":
+      "Deviation from existing patterns, strange variable naming, imperative (for loops) vs. declarative (map / reduce), unnecessary side effects",
+    "example":
+      "Example: looping over array and pushing vs. map / reduce / filter"
+  },
+  {
+    "title": "Overly complex logic",
+    "description":
+      "Lots of arguments, long chains of function calls, complex components, complex selectors, hard to follow code",
+    "example":
+      "Example: big block of computations with no intermediary variables explaining what's going on; excessive use of getState() in thunks"
+  },
+  {
+    "title": "Oversize patch set",
+    "description": "Small diff size, breaks down large problem to smaller ones",
+    "example": "Example: 1k LOC diff"
+  },
+  {
+    "title": "Added code throws errors",
+    "description": "New errors, code fails to run",
+    "example": "Example: throws an exception when code is run"
+  },
+  {
+    "title": "Added code has non-error issues",
+    "description": "Poor performance, underoptimized code, new warnings",
+    "example": "Example: page hangs on loading; uncached selector"
+  },
+  {
+    "title": "Added code causes regressions",
+    "description":
+      "Code negatively affects appearance or functionality of existing code",
+    "example": "Example: style regression, existing feature no longer works"
+  },
+  {
+    "title": "Added code has incorrect CSS/UX",
+    "description":
+      "New feature has incorrect styles or appearance (does not include regressions)",
+    "example":
+      "Example:Added button is gray instead of green; using a select where a button group should be used"
+  },
+  {
+    "title": "Strategy",
+    "description":
+      "Solving a problem the \"wrong way\", implementing a fix at the wrong level of abstraction, too generic of a fix, fix isn't generic enough, builds logic for specific cases into generic components)",
+    "example":
+      "Example: Adding logic to check for some condition in every GridCell across Orion"
+  }
+]
